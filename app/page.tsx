@@ -188,7 +188,7 @@ export default function Home() {
             for training and evaluating frontier AI models.
           </p>
           <a
-            href="/RabdosAI-Sample-Math-Problems.pdf"
+            href="/rabdos-ai-sample-problems.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl"
