@@ -78,7 +78,7 @@ export default function Home() {
               Why Rabdos
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Pushing the boundaries of AI evaluation with mathematically rigorous, scalable problem generation
+              Mathematically rigorous, scalable problem generation for frontier AI models
             </p>
           </div>
 
@@ -209,7 +209,7 @@ export default function Home() {
               Our Founding Team
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Expert mathematicians and technologists pioneering the future of AI evaluation
+              Expert mathematicians and technologists advancing frontier AI
             </p>
           </div>
 
@@ -250,7 +250,7 @@ export default function Home() {
               </a>
               <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">Co-CEO</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Leading vision and strategy for frontier model evaluation
+                Leading vision and strategy for model training and evaluation
               </p>
             </div>
 
@@ -304,7 +304,7 @@ export default function Home() {
             Interested in Rabdos?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Connect with us to learn more about frontier-level mathematical problem generation for AI evaluation.
+            Connect with us to learn more about frontier-level mathematical problem generation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -332,8 +332,7 @@ export default function Home() {
                 Rabdos AI
               </span>
               <p className="mt-4 text-sm">
-                Frontier-level mathematical problem generation for training and evaluating 
-                the next generation of AI models.
+                Frontier-level mathematical problem generation for the next generation of AI models.
               </p>
             </div>
             <div>
