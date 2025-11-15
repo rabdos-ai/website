@@ -11,11 +11,14 @@ export default function Home() {
               </span>
             </div>
             <div className="hidden md:flex space-x-8">
+              <a href="#about" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                About
+              </a>
               <a href="#features" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Features
               </a>
-              <a href="#about" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                About
+              <a href="#team" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                Team
               </a>
               <a href="#contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Contact
@@ -37,23 +40,23 @@ export default function Home() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight">
-            Next Generation
+            Frontier-Level Math
             <br />
-            AI Solutions
+            Problem Generation
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
-            Transform your business with cutting-edge artificial intelligence technology.
-            Rabdos AI delivers intelligent solutions that drive innovation and growth.
+            Advanced mathematical challenges designed to train and evaluate the next generation of AI models.
+            Problems harder than IMO, constructed at scale with precise difficulty control.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
             >
-              Start Your Journey
+              Get in Touch
             </a>
             <a
-              href="#features"
+              href="#about"
               className="bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400 text-gray-900 dark:text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors"
             >
               Learn More
@@ -67,10 +70,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Powerful AI Capabilities
+              Why Rabdos
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Harness the power of advanced AI to solve complex problems and unlock new opportunities
+              Pushing the boundaries of AI evaluation with mathematically rigorous, scalable problem generation
             </p>
           </div>
 
@@ -79,12 +82,12 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-3">Lightning Fast</h3>
+              <h3 className="text-2xl font-bold mb-3">Controllable Difficulty</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Experience unparalleled speed with our optimized AI models that deliver results in milliseconds.
+                Precisely tune problem complexity to challenge models at any capability level, from basic to frontier.
               </p>
             </div>
 
@@ -92,12 +95,12 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-3">Enterprise Security</h3>
+              <h3 className="text-2xl font-bold mb-3">Beyond IMO Complexity</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Your data is protected with state-of-the-art encryption and security protocols you can trust.
+                Problems substantially harder than International Math Olympiad, synthesizing concepts across diverse mathematical domains.
               </p>
             </div>
 
@@ -105,12 +108,12 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-pink-600 dark:text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-3">Easy Integration</h3>
+              <h3 className="text-2xl font-bold mb-3">Scalable Generation</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Seamlessly integrate our AI solutions into your existing workflow with simple APIs.
+                Human-AI collaboration enables rapid creation of challenging problems at scale for training and evaluation.
               </p>
             </div>
           </div>
@@ -123,21 +126,24 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Building the Future with AI
+                Advancing AI Through Mathematical Rigor
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                At Rabdos AI, we&apos;re passionate about creating intelligent solutions that make a real difference. 
-                Our team of experts combines deep technical knowledge with a commitment to innovation.
+                Rabdos is a specialized system for generating exceptionally challenging mathematical problems at scale. 
+                Our platform is designed specifically for training and evaluating frontier AI models, pushing the boundaries 
+                of what&apos;s possible in machine reasoning.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                We believe that AI should be accessible, powerful, and transformative. That&apos;s why we&apos;re dedicated 
-                to building tools that empower businesses of all sizes to harness the full potential of artificial intelligence.
+                The problems we create go far beyond traditional benchmarks like the International Math Olympiad. 
+                By synthesizing concepts from diverse mathematical disciplines with precise difficulty calibration, 
+                we produce challenges that require not just conceptual knowledge, but sophisticated reasoning about 
+                when and how to apply mathematical techniques.
               </p>
               <a
-                href="#contact"
+                href="#team"
                 className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all"
               >
-                Partner With Us
+                Meet the Team
               </a>
             </div>
             <div className="relative">
@@ -147,15 +153,15 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
                       <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                      <span className="text-gray-700 dark:text-gray-300">AI Models Running</span>
+                      <span className="text-gray-700 dark:text-gray-300">Problem Generation</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                      <span className="text-gray-700 dark:text-gray-300">Real-time Processing</span>
+                      <span className="text-gray-700 dark:text-gray-300">Difficulty Calibration</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
-                      <span className="text-gray-700 dark:text-gray-300">Continuous Learning</span>
+                      <span className="text-gray-700 dark:text-gray-300">Model Evaluation</span>
                     </div>
                   </div>
                 </div>
@@ -165,14 +171,78 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section id="team" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Our Founding Team
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Expert mathematicians and technologists pioneering the future of AI evaluation
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Founder 1 */}
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+                RG
+              </div>
+              <h3 className="text-xl font-bold mb-1">Robert Ghrist</h3>
+              <p className="text-purple-600 dark:text-purple-400 font-semibold mb-3">Co-CEO</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Driving mathematical rigor and problem architecture
+              </p>
+            </div>
+
+            {/* Founder 2 */}
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+                MN
+              </div>
+              <h3 className="text-xl font-bold mb-1">Mayur Naik</h3>
+              <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">Co-CEO</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Leading vision and strategy for frontier model evaluation
+              </p>
+            </div>
+
+            {/* Founder 3 */}
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-pink-500 to-red-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+                OX
+              </div>
+              <h3 className="text-xl font-bold mb-1">Oscar Xu</h3>
+              <p className="text-pink-600 dark:text-pink-400 font-semibold mb-3">CTO</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Building scalable infrastructure for problem generation
+              </p>
+            </div>
+
+            {/* Founder 4 */}
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+                SA
+              </div>
+              <h3 className="text-xl font-bold mb-1">Shreya Arya</h3>
+              <p className="text-cyan-600 dark:text-cyan-400 font-semibold mb-3">CRO</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Expanding research partnerships and impact
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Business?
+            Interested in Rabdos?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join the AI revolution and unlock new possibilities for your organization.
+            Connect with us to learn more about frontier-level mathematical problem generation for AI evaluation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -182,10 +252,10 @@ export default function Home() {
               Contact Us
             </a>
             <a
-              href="#features"
+              href="#about"
               className="bg-transparent border-2 border-white hover:bg-white/10 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors"
             >
-              Explore Features
+              Learn More
             </a>
           </div>
         </div>
@@ -200,8 +270,8 @@ export default function Home() {
                 Rabdos AI
               </span>
               <p className="mt-4 text-sm">
-                Next generation AI solutions for modern businesses.
-                Transform your operations with intelligent automation.
+                Frontier-level mathematical problem generation for training and evaluating 
+                the next generation of AI models.
               </p>
             </div>
             <div>
@@ -209,6 +279,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
                 <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
+                <li><a href="#team" className="hover:text-white transition-colors">Team</a></li>
                 <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
@@ -216,8 +287,8 @@ export default function Home() {
               <h4 className="text-white font-semibold mb-4">Connect</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="mailto:contact@rabdos.ai" className="hover:text-white transition-colors">Email</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
+                <li><a href="https://twitter.com/rabdosai" className="hover:text-white transition-colors">Twitter</a></li>
+                <li><a href="https://linkedin.com/company/rabdos-ai" className="hover:text-white transition-colors">LinkedIn</a></li>
               </ul>
             </div>
           </div>

@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rabdos AI - Next Generation AI Solutions",
-  description: "Rabdos AI delivers cutting-edge artificial intelligence solutions to transform your business and drive innovation.",
-  keywords: ["AI", "Artificial Intelligence", "Machine Learning", "Rabdos AI", "AI Solutions"],
+  title: "Rabdos AI - Frontier-Level Math Problem Generation",
+  description: "Rabdos generates exceptionally challenging mathematical problems at scale for training and evaluating frontier AI models. Problems harder than IMO with precise difficulty control.",
+  keywords: ["AI", "Math Problems", "Machine Learning", "Rabdos AI", "AI Evaluation", "Frontier Models", "Mathematical Reasoning", "IMO", "AI Training"],
   authors: [{ name: "Rabdos AI" }],
   openGraph: {
-    title: "Rabdos AI - Next Generation AI Solutions",
-    description: "Rabdos AI delivers cutting-edge artificial intelligence solutions to transform your business and drive innovation.",
+    title: "Rabdos AI - Frontier-Level Math Problem Generation",
+    description: "Rabdos generates exceptionally challenging mathematical problems at scale for training and evaluating frontier AI models. Problems harder than IMO with precise difficulty control.",
     url: "https://rabdos.ai",
     siteName: "Rabdos AI",
     locale: "en_US",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rabdos AI - Next Generation AI Solutions",
-    description: "Rabdos AI delivers cutting-edge artificial intelligence solutions to transform your business and drive innovation.",
+    title: "Rabdos AI - Frontier-Level Math Problem Generation",
+    description: "Rabdos generates exceptionally challenging mathematical problems at scale for training and evaluating frontier AI models.",
   },
 };
 
