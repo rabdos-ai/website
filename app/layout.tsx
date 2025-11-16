@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans, Cormorant_Garamond, Space_Mono } from "next/font/google";
 import "./globals.css";
 import "katex/dist/katex.min.css";
-import VideoBackground from "./components/VideoBackground";
 
 const plexSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -53,7 +52,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${plexSans.variable} ${cormorant.variable} ${spaceMono.variable} antialiased`}>
-        <VideoBackground />
         {children}
       </body>
     </html>
