@@ -18,9 +18,9 @@ export const sampleProblems: SampleProblem[] = [
 A coloring is *admissible* if it satisfies all three linear constraints in $\mathbb{F}_7$:
 $$
 \begin{aligned}
-\sum_{i=0}^{n-1} c_i \equiv 0 \pmod 7,
-\qquad \sum_{i=0}^{n-1} i\,c_i \equiv 0 \pmod 7,
-\qquad \sum_{\substack{0\le i\le n-1\\ i\equiv 0\ (\mathrm{mod}\ 3)}} c_i \equiv 1 \pmod 7.
+\sum_{i=0}^{n-1} c_i &\equiv 0 &&(\mathrm{mod}\ 7) \\
+\sum_{i=0}^{n-1} i\,c_i &\equiv 0 &&(\mathrm{mod}\ 7) \\
+\sum_{\substack{0\le i\le n-1\\ i\equiv 0\ (\mathrm{mod}\ 3)}} c_i &\equiv 1 &&(\mathrm{mod}\ 7)
 \end{aligned}
 $$
 
@@ -68,7 +68,8 @@ For this problem, take $n=30$. How many $D_n$-equivalence classes of admissible 
 
 **Component structure and tags.** Let $H=U_A+U_B+U_C$ (the subspace sum, computed with XOR addition). The connected components of the undirected graph with edge set $R_A\cup R_B\cup R_C$ are precisely the cosets $x+H$ for $x\in\mathbb{F}_2^{12}$. For each component $X$, define its tag as the 8-bit integer formed by the last eight coordinates of any world in $X$:
 $$
-\mathrm{tag}(X) := \text{binary value of }(x_5x_6x_7x_8x_9x_{10}x_{11}x_{12}) \in \{0,1,\dots,255\}.
+\mathrm{tag}(X) := \text{binary value of }(x_5x_6x_7x_8x_9x_{10}x_{11}x_{12}) \\
+\in \{0,1,\dots,255\}.
 $$
 This is well-defined since $H$ acts only on the first four coordinates.
 
