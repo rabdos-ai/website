@@ -1,0 +1,30 @@
+<svg width="320" height="320" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="320" rx="68" fill="#101f1a"/>
+  <circle cx="160" cy="160" r="132" fill="#f5f0e4" stroke="#0c3b32" stroke-width="18"/>
+  <g transform="translate(64 110)">
+    <rect width="192" height="34" fill="#f5f0e4" stroke="#0c3b32" stroke-width="6"/>
+    <g fill="#0c6152">
+      <polygon points="0,34 0,0 24,17"/>
+      <polygon points="24,34 24,0 48,17"/>
+      <polygon points="48,34 48,0 72,17"/>
+      <polygon points="72,34 72,0 96,17"/>
+      <polygon points="96,34 96,0 120,17"/>
+      <polygon points="120,34 120,0 144,17"/>
+      <polygon points="144,34 144,0 168,17"/>
+      <polygon points="168,34 168,0 192,17"/>
+    </g>
+  </g>
+  <g transform="translate(64 176)">
+    <rect width="192" height="34" fill="#f5f0e4" stroke="#0c3b32" stroke-width="6"/>
+    <g fill="#0c6152">
+      <polygon points="0,0 0,34 24,17"/>
+      <polygon points="24,0 24,34 48,17"/>
+      <polygon points="48,0 48,34 72,17"/>
+      <polygon points="72,0 72,34 96,17"/>
+      <polygon points="96,0 96,34 120,17"/>
+      <polygon points="120,0 120,34 144,17"/>
+      <polygon points="144,0 144,34 168,17"/>
+      <polygon points="168,0 168,34 192,17"/>
+    </g>
+  </g>
+</svg>
