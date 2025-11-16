@@ -14,7 +14,7 @@ export default function SampleProblemsPage() {
   const activeProblem = featured.find((problem) => problem.id === activeId) ?? featured[0];
 
   return (
-    <main className="min-h-screen bg-[var(--background)] px-4 py-10 text-[var(--foreground)] sm:px-6 sm:py-12">
+    <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-4 py-10 text-[var(--foreground)] sm:px-6 sm:py-12">
       <div className="napier-panel mx-auto flex max-w-5xl flex-col gap-6 shadow-rod-float sm:gap-8">
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
           <h1 className="text-2xl font-display uppercase tracking-[0.2em] sm:text-3xl sm:tracking-[0.4em]">Sample Problems</h1>
