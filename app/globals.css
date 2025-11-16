@@ -57,7 +57,7 @@ a {
   position: relative;
   border: 1px solid var(--line);
   background: #fdfbf5;
-  padding: 2.5rem;
+  padding: 1.75rem;
 }
 
 .napier-panel > * {
@@ -77,8 +77,8 @@ a {
   border: 1px solid var(--line);
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.4em;
-  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  font-size: 0.7rem;
   font-family: var(--font-mono, "Space Mono", monospace);
   display: inline-flex;
   align-items: center;
@@ -132,4 +132,27 @@ a {
   background: rgba(15, 92, 68, 0.08);
   padding: 0.1rem 0.35rem;
   border-radius: 0.3rem;
+}
+
+@media (max-width: 640px) {
+  .napier-panel {
+    padding: 1.5rem;
+  }
+
+  .button-analog {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .napier-panel {
+    padding: 2.5rem;
+  }
+
+  .button-analog {
+    letter-spacing: 0.4em;
+    font-size: 0.75rem;
+    width: auto;
+  }
 }
