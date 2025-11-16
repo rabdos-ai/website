@@ -30,23 +30,11 @@ const config: Config = {
           200: "#ede0c4",
           300: "#e0cfac",
         },
-        brass: "#c58f51",
-        highlight: "#f4d8a4",
-        patina: "#5b937f",
-        oxide: "#b28a6b",
       },
       fontFamily: {
         body: ["var(--font-body)", "sans-serif"],
         display: ["var(--font-display)", "serif"],
         mono: ["var(--font-mono)", "monospace"],
-      },
-      boxShadow: {
-        etched: "inset 0 1px rgba(255,255,255,0.25), inset 0 -2px 6px rgba(13,34,27,0.35)",
-        "rod-float": "0 25px 45px rgba(3,9,7,0.4)",
-      },
-      backgroundImage: {
-        "grid-soft":
-          "linear-gradient(to right, rgba(13,38,29,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(13,38,29,0.08) 1px, transparent 1px)",
       },
     },
   },
