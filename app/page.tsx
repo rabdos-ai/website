@@ -17,7 +17,7 @@ export default function Home() {
           <div className="mx-auto max-w-2xl rounded border border-[var(--line)] bg-white/60 p-5 text-left shadow-sm">
             <p className="font-mono text-[0.95rem] uppercase tracking-[0.35em] text-[var(--accent)]/80">Our problems are</p>
             <ul className="mt-4 space-y-3">
-              <li>&bull; More challenging than Putnam and International Math Olympiad.</li>
+              <li>&bull; More challenging than Putnam and IMO.</li>
               <li>&bull; Tunable to any desired difficulty.</li>
             </ul>
             <div className="mt-3 text-right">
