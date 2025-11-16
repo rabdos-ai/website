@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-4 py-12 text-[var(--foreground)] sm:px-6">
-      <div className="napier-panel w-full max-w-4xl space-y-6 text-left shadow-rod-float">
+      <div className="napier-panel w-full max-w-5xl space-y-6 text-left shadow-rod-float sm:max-w-6xl">
         <div className="flex flex-col items-center gap-3 text-center">
           <div className="flex items-center justify-center gap-4">
             <Image src="/logo-napier.svg" alt="Rabdos AI logo" width={110} height={110} priority />
