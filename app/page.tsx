@@ -33,12 +33,11 @@ export default function Home() {
             Meet the team: UPenn Math & CS faculty, postdoc, PhD student.
           </Link>
         </div>
-        <p className="text-center text-sm font-mono uppercase tracking-[0.3em] text-[var(--foreground)]/80">
-          contact us at{" "}
-          <a href="mailto:admin@rabdos.ai" className="underline">
-            admin@rabdos.ai
+        <div className="text-center">
+          <a href="mailto:admin@rabdos.ai" className="link-analog inline-flex text-base leading-relaxed text-[var(--foreground)]/85 underline decoration-dotted underline-offset-4">
+            Contact us at admin@rabdos.ai
           </a>
-        </p>
+        </div>
         <blockquote className="border-l-2 border-[var(--line)] pl-4 text-sm leading-relaxed italic text-[var(--foreground)]/80">
           “Rabdos” is Greek for “rod,” referencing Napier&apos;s rods&mdash;handcrafted tools that supercharged calculation.
         </blockquote>
