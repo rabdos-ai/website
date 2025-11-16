@@ -3,26 +3,69 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #f7f1dd;
+  --foreground: #0d3023;
+  --accent: #0a4a37;
+  --muted: #e8ddc0;
+  --line: rgba(13, 48, 35, 0.18);
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #f1e8cf;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(10, 74, 55, 0.08), transparent 50%),
+    repeating-linear-gradient(90deg, rgba(13, 48, 35, 0.03) 0 4px, transparent 4px 36px);
+  font-family: var(--font-body, "IBM Plex Sans", sans-serif);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  margin: 0;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(10, 74, 55, 0.08),
+      rgba(10, 74, 55, 0.08) 2px,
+      transparent 2px,
+      transparent 34px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(10, 74, 55, 0.05),
+      rgba(10, 74, 55, 0.05) 1px,
+      transparent 1px,
+      transparent 30px
+    );
+  opacity: 0.35;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(15, 92, 68, 0.2);
+}
+
+.napier-panel {
+  position: relative;
+  border: 1px solid var(--line);
+  background: #fdfbf5;
+  padding: 2.5rem;
+}
+
+.napier-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Napier-rod motif remains behind via background */
 
 @layer utilities {
   .text-balance {
@@ -30,3 +73,63 @@ body {
   }
 }
 
+.button-analog {
+  border: 1px solid var(--line);
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.75rem;
+  font-family: var(--font-mono, "Space Mono", monospace);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--foreground);
+  background-color: rgba(255, 255, 255, 0.65);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.button-analog:hover {
+  background-color: rgba(15, 92, 68, 0.12);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.link-analog {
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.link-analog:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.problem-panel {
+  animation: ledgerFade 220ms ease;
+}
+
+@keyframes ledgerFade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.problem-typography p {
+  margin-bottom: 1rem;
+}
+
+.problem-typography code {
+  font-family: var(--font-mono, "Space Mono", monospace);
+  background: rgba(15, 92, 68, 0.08);
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.3rem;
+}

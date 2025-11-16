@@ -1,0 +1,306 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+  colback=white,
+  colframe=black,
+  boxrule=0.6pt,
+  arc=2pt,
+  left=8pt,right=8pt,top=6pt,bottom=6pt,
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{RabdosAI: Sample problems}}\\[6pt]
+  {\large A collection of verified math problems. }
+\end{center}
+\vspace{1em}
+
+
+%================== PUZZLE 1 ==================
+\noindent\textbf{\large 1. Group Theory}
+
+\begin{tcolorbox}
+Let $n$ beads be arranged on a circle and indexed $0,1,\dots,n-1$. Each bead is colored by an element of the finite field $\mathbb{F}_7=\mathbb{Z}/7\mathbb{Z}$. Two colorings $(c_0,\dots,c_{n-1})\in \mathbb{F}_7^n$ are considered equivalent if one can be obtained from the other by a rotation or reflection of the necklace (i.e.\ by the usual dihedral action $D_n$ on indices).
+
+A coloring is \emph{admissible} if it satisfies all three linear constraints in $\mathbb{F}_7$:
+\[
+\text{(C0)}\ \sum_{i=0}^{n-1} c_i \equiv 0,\qquad
+\text{(C1)}\ \sum_{i=0}^{n-1} i\,c_i \equiv 0,\qquad
+\text{(C2)}\ \sum_{\substack{0\le i\le n-1\\ i\equiv 0\ (\mathrm{mod}\ 3)}} c_i \equiv 1.
+\]
+
+For this problem, take $n=30$.
+
+\medskip
+ How many $D_n$–equivalence classes of admissible colorings are there for $n=30$? Report your answer modulo $1{,}000{,}003$ as a positive integer.
+\end{tcolorbox}
+
+\medskip
+\noindent \textbf{Answer (mod $1{,}000{,}003$):} $\boxed{587{,}104}$
+
+\medskip
+\noindent\textbf{Evaluation:} 
+\texttt{[Gemini: 0/5]} \quad \texttt{[GPT-5-Thinking: 1/5]}
+
+\medskip
+\noindent\textbf{Metadata.}
+
+% Bullet list for static fields
+\begin{list}{$\blacktriangleright$}{%
+  \setlength{\leftmargin}{2.8em}%
+  \setlength{\itemsep}{2pt}%
+  \setlength{\topsep}{2pt}%
+  \setlength{\parsep}{0pt}%
+  \setlength{\parskip}{0pt}}
+  \item \textbf{Difficulty:} Medium–Hard
+  \item \textbf{Subject:} Group Theory -- Actions on Colorings
+  \item \textbf{Technique:} Burnside’s Lemma (with linear constraints over $\mathbb{F}_7$)
+  \item \textbf{Reasoning trace.} Burnside reduction over $D_{30}$ to cycle variables $\Rightarrow$ impose the three global linear constraints as a $3\times d(g)$ system in $\mathbb{F}_7$ per conjugacy type $\Rightarrow$ sum fixed-point counts and divide by $|D_{30}|$.
+\end{list}
+
+
+% \medskip
+% \noindent\textbf{Metadata.}  
+% \textbf{Difficulty:} Medium–Hard \\
+% \textbf{Subject:} Group Theory (actions on colorings) \\
+% \textbf{Technique:} Burnside’s Lemma (with linear constraints over $\mathbb{F}_7$) \\
+% \textbf{Reasoning trace.} Burnside reduction over $D_{30}$ to cycle variables $\Rightarrow$ impose the three global linear constraints as a $3\times d(g)$ system in $\mathbb{F}_7$ per conjugacy type $\Rightarrow$ sum fixed-point counts and divide by $|D_{30}|$.
+
+
+
+\vspace{1.5em}
+
+%================== PUZZLE 2 ==================
+\noindent\textbf{\large 2. Algebraic Combinatorics}
+
+\begin{tcolorbox}
+Let $H$ be the set of all hyperplanes in $\mathbb{R}^{48}$ given by 
+$x_i - x_j = 0$ or $x_i - x_j = 1$ 
+for every pair of indices with $1 \le i < j \le 48$.  
+Intersect $H$ with the hyperplane 
+$x_1 + x_2 + \cdots + x_{48} = 0$ 
+to obtain an arrangement inside that $47$-dimensional subspace.  
+
+Let $r$ be the number of regions of this arrangement, and let $b$ be the number of relatively bounded regions.  
+What is the remainder of $(r - b)$ when divided by $48$?
+\end{tcolorbox}
+
+
+\medskip
+\noindent \textbf{Answer (mod $48$):} $\boxed{2}$
+
+\medskip
+\noindent\textbf{Evaluation:} 
+\texttt{[Gemini: 1/5]} \quad \texttt{[GPT-5-Thinking: 1/5]}
+
+\medskip
+\noindent\textbf{Metadata.}
+
+\begin{list}{$\blacktriangleright$}{%
+  \setlength{\leftmargin}{2.8em}%
+  \setlength{\itemsep}{2pt}%
+  \setlength{\topsep}{2pt}%
+  \setlength{\parsep}{0pt}%
+  \setlength{\parskip}{0pt}}
+  \item \textbf{Difficulty:} Medium–Hard
+  \item \textbf{Subject:} Hyperplane Arrangements
+  \item \textbf{Technique:} Identify as Shi arrangement (type $A$); apply Athanasiadis’ formula and Zaslavsky’s theorem.
+  \item \textbf{Reasoning trace.} Recognize Shi arrangement of type $A_{47}$ $\Rightarrow$ use $\chi_{\text{Shi}}(t)=(t-n)^{n-1}$ with $n=48$ $\Rightarrow$ $r=(-1)^{47}\chi(-1)=49^{47}$, $b=(-1)^{47}\chi(1)=47^{47}$ $\Rightarrow$ $r-b\equiv49^{47}-47^{47}\equiv1-(-1)\equiv2\pmod{48}$.
+\end{list}
+
+\vspace{1.5em}
+
+
+
+%================== PUZZLE 3 ==================
+
+
+\noindent\textbf{\large 3. Probability}
+
+\begin{tcolorbox}
+Consider a random permutation of the letters in the word \texttt{MISSISSIPPI}.  
+Each permutation is equally likely.
+What is the probability that no two \textbf{S}'s stand next to each other,  
+no two \textbf{I}'s stand next to each other,  
+and no two \textbf{P}'s stand next to each other?
+\end{tcolorbox}
+
+\medskip
+\noindent \textbf{Answer:} $\displaystyle \boxed{\tfrac{16}{275}}$
+
+\medskip
+\noindent\textbf{Evaluation:} 
+\texttt{[Gemini: 0/5]} \quad \texttt{[GPT-5-Thinking: 4/5]}
+
+\medskip
+\noindent\textbf{Metadata.}
+
+\begin{list}{$\blacktriangleright$}{%
+  \setlength{\leftmargin}{2.8em}%
+  \setlength{\itemsep}{2pt}%
+  \setlength{\topsep}{2pt}%
+  \setlength{\parsep}{0pt}%
+  \setlength{\parskip}{0pt}}
+  \item \textbf{Difficulty:} Medium–Hard
+  \item \textbf{Subject:} Probability
+  \item \textbf{Technique:} Counting runs. 
+  \item \textbf{Reasoning trace.}  Total number of distinct permutations of \texttt{MISSISSIPPI} $=$ $\tfrac{11!}{4!4!2!}=34650$ $\Rightarrow$ choose $4$ non-adjacent slots for S's among $11$ ($\binom{8}{4}=70$) $\Rightarrow$ from remaining $7$ positions, choose $4$ non-adjacent for I's $\Rightarrow$ from remaining $3$, choose $2$ non-adjacent for P's (last slot for M) $\Rightarrow$ total favorable $=2016$ $\Rightarrow$ probability $=\tfrac{2016}{34650}=\tfrac{16}{275}$.
+
+\end{list}
+
+\vspace{1.5em}
+
+%================== PUZZLE 5 ==================
+\noindent\textbf{\large 4. Topology}
+
+\begin{tcolorbox}
+
+
+Let $X$ be the set of real numbers and define
+\[
+A = \left\{ \frac{1}{n} \;\middle|\; n = 1, 2, 3, \dots \right\}.
+\]
+Define a topology $\tau$ on $X$ by declaring that a set $O \subset X$ belongs to $\tau$ if and only if
+\[
+O = U - B,
+\]
+where $U$ is an open set in the usual Euclidean topology on $\mathbb{R}$ and $B \subset A$.
+
+Determine whether the topological space $(X,\tau)$ is \textbf{countably paracompact.}  
+Write \texttt{1} for true and \texttt{0} for false.
+\end{tcolorbox}
+
+\medskip
+\noindent\textbf{Answer:} $\boxed{0}$
+
+\medskip
+\noindent\textbf{Evaluation:} 
+\texttt{[Gemini: 3/5]} \quad \texttt{[GPT-5-Thinking: 1/5]}
+
+\medskip
+\noindent\textbf{Metadata.}
+
+\begin{list}{$\blacktriangleright$}{%
+  \setlength{\leftmargin}{2.8em}%
+  \setlength{\itemsep}{2pt}%
+  \setlength{\topsep}{2pt}%
+  \setlength{\parsep}{0pt}%
+  \setlength{\parskip}{0pt}}
+  \item \textbf{Difficulty:} Medium
+  \item \textbf{Subject:} Point-Set Topology -- Separation and Covering Properties
+  \item \textbf{Technique:} Construction of a non-locally-finite refinement for a countable open cover. This topology is sometimes called the \emph{Smirnov topology} on $X$.
+  \item \textbf{Reasoning trace.} $X$ is not countably paracompact $\Rightarrow$ the countable open covering by $O_n = X - (A - \{\tfrac{1}{n}\})$ has no open locally finite refinement $\Rightarrow$ any open set containing $0$ must intersect infinitely many others since every neighborhood of $0$ includes an interval about $0$ minus finitely many $\tfrac{1}{n}$ points $\Rightarrow$ local finiteness fails for all countable refinements.
+\end{list}
+
+% \medskip
+% \textbf{Metadata.}  
+% \textbf{Difficulty:} Medium–Hard \\
+% \textbf{Subject:} Enumerative Combinatorics / Probability on Multisets \\
+% \textbf{Technique:} Run-counting with random insertion; combinatorial normalization across identical letters \\
+% \textbf{Reasoning trace.}  
+% First arrange the eight letters $\text{IIII}\,\text{SSSS}$ at random and count the expected number of \emph{runs}.  
+% Use this to determine configurations where no identical letters are adjacent.  
+% Then insert the remaining letters $\text{M}$ and $\text{P}\text{P}$ uniformly at random into available gaps while preserving separation.  
+% Finally, divide the count of valid arrangements by the total number of distinct permutations $\tfrac{11!}{4!4!2!}$,  
+% yielding the probability $\tfrac{16}{275}$.
+
+\vspace{1.5em}
+
+
+%================== PUZZLE 4 ==================
+\noindent\textbf{\large 5. Epistemic Logic}
+
+\begin{tcolorbox}
+%================== PUZZLE 4 ==================
+
+Consider a multi-agent epistemic model with three agents $A,B,C$ operating in the multi-agent logic $\mathsf{S5}$.  
+The set of possible worlds is $W=\mathbb{F}_2^{12}$, the set of all 12-bit binary strings 
+$x=(x_1,x_2,\dots,x_{12})$ with arithmetic modulo 2 (XOR).  
+The designated actual world is $w_\star=0$ (the all-zeros string). Each agent $i$ has an equivalence relation $R_i$ on $W$ representing indistinguishability.  
+We define these via linear subspaces of $\mathbb{F}_2^{12}$:
+\smallskip
+
+ \textbf{Agent A:} Let $U_A=\mathrm{span}\{e_1,e_2\}$ where $e_j$ is the $j$th standard basis vector.  
+Define $x\,R_A\,y$ iff $x-y\in U_A$ (equivalently, $x$ and $y$ differ only in coordinates 1 and 2).
+\smallskip
+
+
+ \textbf{Agent B:} Let $U_B=\mathrm{span}\{e_3,e_4\}$.  
+Define $x\,R_B\,y$ iff $x-y\in U_B$.
+\smallskip
+
+
+ \textbf{Agent C:} Let $U_C=\mathrm{span}\{e_1+e_3,\,e_2+e_4\}$.  
+Define $x\,R_C\,y$ iff $x-y\in U_C$.
+\smallskip
+
+
+\textbf{Epistemic operators.}  
+Write $K_i\varphi$ for “agent $i$ knows $\varphi$,” 
+$EG\varphi := K_A\varphi \wedge K_B\varphi \wedge K_C\varphi$ for “everyone knows $\varphi$,” 
+and $CG\varphi$ for “common knowledge of $\varphi$ among $G=\{A,B,C\}$.”  
+Common knowledge $CG\varphi$ holds at world $w$ iff $\varphi$ holds at every world reachable from $w$ 
+by any finite sequence of steps along $R_A \cup R_B \cup R_C$.
+
+
+\textbf{Component structure and tags.}  
+Let $H=U_A+U_B+U_C$ (the subspace sum, computed with XOR addition).  
+The connected components of the undirected graph with edge set $R_A\cup R_B\cup R_C$ 
+are precisely the cosets $x+H$ for $x\in\mathbb{F}_2^{12}$.  
+For each component $X$, define its tag as the 8-bit integer formed by the last eight coordinates of any world in $X$:
+\[
+\mathrm{tag}(X) := \text{binary value of } (x_5x_6x_7x_8x_9x_{10}x_{11}x_{12}) \in \{0,1,\dots,255\}.
+\]
+This is well-defined since $H$ acts only on the first four coordinates.
+We consider valuations $V$ assigning truth values to three propositional atoms $p,q,r$ at each world.  
+A valuation is \emph{admissible} iff it satisfies two conditions:
+
+\textbf{(F1)} At $w_\star$: $\mathcal{M},w_\star\models CG(EGp \wedge EG\neg q)$.
+
+
+\textbf{(F2)} Among all components $X\ne X_\star$ (where $X_\star$ is the component containing $w_\star$),  
+call $X$ \emph{good} if for any (equivalently, every) $x\in X$:
+\[
+\mathcal{M},x\models CGEGr \quad\wedge\quad CGEG(p\leftrightarrow r\oplus \mathrm{parity}(\mathrm{tag}(X))),
+\]
+where $\mathrm{parity}(t)$ is the sum of bits in the binary representation of $t$ modulo $2$, 
+and $\oplus$ denotes XOR.  
+Let $S=\{X\ne X_\star : X \text{ is good}\}$. Then,
+\[
+|S|\equiv 7\pmod{13}, \qquad \sum_{X\in S}\mathrm{tag}(X)\equiv45\pmod{97}.
+\]
+
+Count the number of admissible valuations. Report your answer modulo $10{,}007$.
+
+
+
+\end{tcolorbox}
+
+\medskip
+\noindent \textbf{Answer (mod $10{,}007$):} $\boxed{4{,}814}$
+
+\medskip
+\noindent\textbf{Evaluation:} 
+\texttt{[Gemini: 0/5]} \quad \texttt{[GPT-5-Thinking: 0/5]}
+
+\medskip
+\noindent\textbf{Metadata.}
+
+\begin{list}{$\blacktriangleright$}{%
+  \setlength{\leftmargin}{2.8em}%
+  \setlength{\itemsep}{2pt}%
+  \setlength{\topsep}{2pt}%
+  \setlength{\parsep}{0pt}%
+  \setlength{\parskip}{0pt}}
+  \item \textbf{Difficulty:} Hard
+  \item \textbf{Subject:} Multi-Agent Epistemic Logic
+  \item \textbf{Technique:} Linear-subspace decomposition of $\mathsf{S5}$ knowledge components.
+  \item \textbf{Reasoning trace.} Compute $H=U_A+U_B+U_C=\mathrm{span}(e_1,e_2,e_3,e_4)\subset\mathbb{F}_2^{12}$ $\Rightarrow$ 256 components of size $16$ $\Rightarrow$ apply (F1): $p\equiv1$, $q\equiv0$ on $X_\star$; $r$ arbitrary ($2^{16}$ choices) $\Rightarrow$ for each other component $X$ with tag $t$: $r$ constant (2 choices), $p=r\oplus\mathrm{parity}(t)$, $q$ free ($2^{16}$ choices) $\Rightarrow$ $A_t=2\cdot2^{16}$, $B_t=2^{48}-2\cdot2^{16}$ $\Rightarrow$ form generating product $F(y,z)=\prod_{t=1}^{255}(B_t+A_t\,y\,z^t)$, multiply by $2^{16}$ for $X_\star$, extract residue slice $m\equiv7\pmod{13}$, $s\equiv45\pmod{97}$ $\Rightarrow$ final count $\equiv4{,}814\pmod{10{,}007}$.
+\end{list}
+
+
+
+\end{document}
