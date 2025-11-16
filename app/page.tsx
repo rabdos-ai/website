@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-4 py-12 text-[var(--foreground)] sm:px-6">
+    <main className="flex min-h-screen items-center justify-center px-4 py-12 text-[var(--foreground)] sm:px-6">
       <div className="napier-panel napier-panel-grand w-full max-w-5xl space-y-8 text-left">
         <div className="flex flex-col items-center gap-4 text-center">
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">

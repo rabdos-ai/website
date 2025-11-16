@@ -29,7 +29,7 @@ const team = [
 
 export default function TeamPage() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6 py-12 text-[var(--foreground)]">
+    <main className="flex min-h-screen items-center justify-center px-6 py-12 text-[var(--foreground)]">
       <div className="napier-panel napier-panel-grand mx-auto flex w-full max-w-5xl flex-col gap-10 text-center shadow-rod-float">
         <div className="flex flex-col gap-4 text-center sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:text-left">
           <h1 className="font-display text-4xl uppercase tracking-[0.35em] sm:text-5xl sm:tracking-[0.45em]">Team & Contact</h1>
