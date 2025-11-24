@@ -2,7 +2,7 @@
 
 A modern, responsive Next.js website for Rabdos AI built with TypeScript and Tailwind CSS.
 
-## 🚀 Getting Started
+## 🚀 Getting Started 
 
 ### Prerequisites
 
