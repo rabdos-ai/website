@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Cormorant_Garamond, Space_Mono } from "next/font/google";
+import { Saira, Rajdhani, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "katex/dist/katex.min.css";
 
-const plexSans = IBM_Plex_Sans({
+const saira = Saira({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-body",
   display: "swap",
 });
 
-const cormorant = Cormorant_Garamond({
+const rajdhani = Rajdhani({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-display",
   display: "swap",
 });
 
-const spaceMono = Space_Mono({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-mono",
@@ -51,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plexSans.variable} ${cormorant.variable} ${spaceMono.variable} antialiased`}>
+      <body className={`${saira.variable} ${rajdhani.variable} ${jetbrainsMono.variable} antialiased`}>
         {children}
       </body>
     </html>
