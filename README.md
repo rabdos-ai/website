@@ -2,9 +2,9 @@
 
 A modern, responsive Next.js website for Rabdos AI built with TypeScript and Tailwind CSS.
 
-## 🚀 Getting Started 
+## 🚀 Getting Started
 
-### Prerequisites
+### Prerequisite
 
 - Node.js 18.0 or higher
 - npm or yarn package manager
