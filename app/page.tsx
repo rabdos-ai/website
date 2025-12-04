@@ -8,7 +8,7 @@ export default function Home() {
       <div className="flex flex-col items-center gap-4 text-center">
         <div className="flex flex-col items-center justify-center gap-4"><Image src="/logos/TITLE-7x3.svg" alt="Rabdos AI logo" width={280} height={120} className="sm:h-auto sm:w-[400px]" priority />
           </div>
-          <p className="font-mono text-[0.9rem] uppercase tracking-[0.5em] text-[var(--accent)]/80 sm:text-[0.95rem] sm:tracking-[0.4em]">FRONTIER MATHEMATICAL PROBLEM GENERATION</p>
+          <p className="font-mono text-[0.9rem] uppercase tracking-[0.5em] text-[var(--accent)]/80 sm:text-[0.95rem] sm:tracking-[0.4em]">FRONTIER MATHEMATICAL PROBLEM CREATION</p>
         </div>
         <div className="space-y-5 text-center text-base leading-[1.8] text-[var(--foreground)]/85 sm:text-[1.35rem]">
           <p>Rabdos AI forges advanced mathematics datasets at scale for LLMs</p>
