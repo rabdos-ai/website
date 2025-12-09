@@ -15,13 +15,13 @@ const team = [
   },
   {
     name: "Oscar Xu",
-    title: "CTO",
+    title: "",
     url: "https://oscarxzq.github.io/",
     email: "oscar@rabdos.ai",
   },
   {
     name: "Shreya Arya",
-    title: "CRO",
+    title: "",
     url: "https://shreyaarya.github.io/minimal/",
     email: "shreya@rabdos.ai",
   },
