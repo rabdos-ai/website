@@ -13,18 +13,6 @@ const team = [
     url: "https://www.cis.upenn.edu/~mhnaik/",
     email: "mayur@rabdos.ai",
   },
-  {
-    name: "Oscar Xu",
-    title: "",
-    url: "https://oscarxzq.github.io/",
-    email: "oscar@rabdos.ai",
-  },
-  {
-    name: "Shreya Arya",
-    title: "",
-    url: "https://shreyaarya.github.io/minimal/",
-    email: "shreya@rabdos.ai",
-  },
 ];
 
 export default function TeamPage() {
